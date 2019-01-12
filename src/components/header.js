@@ -1,42 +1,95 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import { FaFileAlt } from "react-icons/fa"
+import siteConfig from '../../data/siteConfig'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  z-index: 1000;
+  background-color: #25303B;
+`
+
+const HeaderNav = styled.nav`
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  z-index: 1000;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background-color: #25303B;
+`
+
+const HeaderLinkGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+` 
+
+const HeaderLink = styled(Link)`
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border: 0;
+  margin: 0;
+  margin-right: 0.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 42px;
+  z-index: 10;
+`
+const ResumeLink = styled(({ className }) => (
+  <a 
+    className={className}
+    href='/documents/resume.pdf'
+    target='_blank'
+    rel="noopener noreferrer"
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+    <FaFileAlt size={32} />
+  </a>
+))`
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border: 0;
+  margin: 0;
+  margin-right: 0.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 42px;
+  z-index: 10;
+`
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+class Header extends React.Component {
+  render () {
+    const { headerLinks } = siteConfig
 
-Header.defaultProps = {
-  siteTitle: ``,
+    return (
+      <HeaderWrapper>
+        <HeaderNav>
+          <HeaderLinkGroup>
+            {headerLinks.map((headerLink, i) => (
+              <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
+                {headerLink.label}
+              </HeaderLink>
+            ))}
+          </HeaderLinkGroup>
+          <ResumeLink />
+        </HeaderNav>
+      </HeaderWrapper>
+    )
+  }
 }
 
 export default Header
