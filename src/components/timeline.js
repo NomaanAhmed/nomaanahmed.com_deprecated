@@ -6,7 +6,7 @@ import siteConfig from '../../data/siteConfig'
 const Timeline = ({ className }) => {
   return (
     <div className={className}>
-      <h1>Experience</h1>
+      <h1>Work Experience</h1>
       {siteConfig.jobs && siteConfig.jobs.map(job => (
         <article key={job.begin.month + job.begin.year} className='timeline__item'>
           <div className="inner">
@@ -78,7 +78,7 @@ export default styled(Timeline)`
     padding-top: 4px;
   }
   .timeline__year {
-    font-size: 10px;
+    font-size: 15px;
   }
   .timeline__title {
     padding: 15px;

@@ -4,7 +4,7 @@ const Wrapper = styled.main.attrs({
   role: 'main',
 })`
   position: relative;
-  border-radius: 3px;
+  border-radius: 10px;
   width: 80%;
   max-width: 960px;
   border-bottom: 1px solid #ebf2f6;

@@ -49,12 +49,8 @@ const HeaderLink = styled(Link)`
   z-index: 10;
 `
 const ResumeLink = styled(({ className }) => (
-  <a 
-    className={className}
-    href='/documents/resume.pdf'
-    target='_blank'
-    rel="noopener noreferrer"
-  >
+  <a className={className} href='/documents/resume.pdf' target='_blank' 
+    rel="noopener noreferrer">
     <FaFileAlt size={32} />
   </a>
 ))`
@@ -85,7 +81,9 @@ class Header extends React.Component {
               </HeaderLink>
             ))}
           </HeaderLinkGroup>
-          <ResumeLink />
+          <HeaderLinkGroup>
+            <ResumeLink />
+          </HeaderLinkGroup>
         </HeaderNav>
       </HeaderWrapper>
     )

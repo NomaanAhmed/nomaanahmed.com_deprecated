@@ -12,6 +12,8 @@ import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
 import Repositories from '../components/repositories'
+import Tooltip from "react-simple-tooltip"
+import Subheader from '../components/subheader'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -59,18 +61,35 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Row>
-              <Col xs={4} sm={4}>
+              <Col xs={4} sm={8}>
                 <About title='About' text={siteConfig.authorDescription}/>
-              </Col>
-              <Col xs={4} sm={4}>
-                <Skills title='Skills' skills={siteConfig.skills} />
               </Col>
             </Row>
             <Separator />
-            <Timeline />
-            <Separator />
-            <Repositories />
+            <Row>              
+              <Subheader title={'Skills'} />
+            </Row>
+            <Row>
+              <Col xs={4} sm={4}>
+                <Skills title='Web' skills={siteConfig.webSkills} />
+              </Col>
+              <Col xs={4} sm={4}>
+                <Skills title='Mobile' skills={siteConfig.mobileSkills} />
+              </Col>
+            </Row>
+            <br />
+            <Row>
+              <Col xs={4} sm={4}>
+                <Skills title='Object-Oriented' skills={siteConfig.oopSkills} />
+              </Col>
+              <Col xs={4} sm={4}>
+                <Skills title='Other (SVN, DBMS, ...)' skills={siteConfig.otherSkills} />
+              </Col>
+            </Row>
           </Container>
+        </Wrapper>
+        <Wrapper>
+          <Timeline />
         </Wrapper>
       </Layout>
     )
