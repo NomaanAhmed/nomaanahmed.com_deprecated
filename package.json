@@ -16,13 +16,11 @@
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-transformer-sharp": "^2.1.10",
-    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-awesome-styled-grid": "^2.2.2",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.3.0",
-    "react-simple-tooltip": "^2.3.3",
     "simple-json-fetch": "^1.0.1",
     "styled-components": "^4.1.3"
   },

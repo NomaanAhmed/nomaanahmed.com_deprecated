@@ -5,12 +5,12 @@ module.exports = {
     twitterUsername: 'nomaanahmed',
     githubUsername: 'nomaanahmed',
     authorAvatar: '/images/avatar.png',
-    authorDescription: `Soon-to-be Software Engineer with industry experience looking for challenging opportunities. Vested interest in client-facing applications.
-    I want to change the world - do you?`,
+    authorDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Donec ut elit eget purus auctor euismod non a dolor. Integer non tincidunt nulla. Nulla ac purus mattis, dapibus quam at, pharetra mi. Vivamus quis diam congue, eleifend purus id, viverra sem. Duis quis dui sed mauris malesuada accumsan. Aliquam erat neque, pretium sit amet viverra eu, imperdiet vel turpis.`,
     webSkills: [
       {
         name: 'TypeScript',
-        level: 80,
+        level: 100,
         details: 'Angular'
       },
       {
@@ -20,84 +20,85 @@ module.exports = {
       },
       {
         name: 'PHP',
-        level: 60,
+        level: 50,
         details: 'Laravel'
       },
       {
         name: 'CSS',
-        level: 80,
+        level: 75,
         details: 'incl. SASS'
       },      
       {
         name: 'JavaScript/JSX',
-        level: 90,
+        level: 100,
         details: 'Raw, ReactJS, Node.JS/npm, GatsbyJS'
       }
     ],
+//TODO RENAME AND REMOVE
     mobileSkills: [
       {
         name: 'Java',
-        level: 90,
+        level: 75,
         details: 'Android'
       },
       {
-        name: 'Objective-C',
-        level: 70,
+        name: 'Obj-C',
+        level: 50,
         details: 'iOS'
       },
       {
         name: 'Swift',
-        level: 85,
+        level: 50,
         details: 'iOS'
       },
       {
         name: 'C#',
-        level: 65,
+        level: 75,
         details: 'Xamarin (Cross-Platform)'
       }
     ],
     oopSkills: [
       {
         name: 'C#',
-        level: 90,
+        level: 100,
         details: 'WPF, WinForms'
       },
       {
         name: 'C++',
-        level: 70,
+        level: 50,
         details: 'Video Games & Windows Application Development'
       },
       {
         name: 'Java',
-        level: 80,
+        level: 75,
         details: 'Raw'
       },
       {
         name: 'Python',
-        level: 90,
-        details: 'Machine Learning, Big Data, Artificial Intelligence'
+        level: 100,
+        details: 'Anaconda/Jupyter, R, TensorFlow, Pandas, Machine Learning, Big Data, Artificial Intelligence'
       }
     ],
 
     otherSkills: [
       {
         name: 'Git',
-        level: 85,
+        level: 75,
         details: 'GitHub, GitLab, BitBucket'
       },
       {
         name: 'Perforce',
-        level: 85,
+        level: 75,
         details: 'P4V'
       },
       {
         name: 'MySQL',
-        level: 90,
+        level: 100,
         details: 'Raw'
       },
       {
         name: 'MongoDB',
-        level: 80,
+        level: 75,
         details: 'Raw'
       }
     ],

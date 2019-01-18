@@ -2,7 +2,6 @@ import React from 'react'
 import { withPrefix } from 'gatsby'
 import siteConfig from '../../data/siteConfig'
 import styled from 'styled-components'
-import Tooltip from "react-simple-tooltip"
 
 const HeroContainer = styled.div`
   position: relative;
@@ -38,11 +37,11 @@ class Hero extends React.Component {
     return (
       <HeroContainer className={className}>
         <TitleContainer>
-          <Tooltip arrow='20' background='rgba(37, 48, 60, 0.74)' border='#25303B' 
+          {/* <Tooltip arrow='20' background='rgba(37, 48, 60, 0.74)' border='#25303B' 
             fontFamily='cursive' fontSize='6' content={'(n\u014dm\u2212\u00E4\u00E4n)'}
-            fadeDuration='500' placement='right' radius='5'>
+            fadeDuration='500' placement='right' radius='5'> */}
             <HeroTitle>{title}</HeroTitle>
-          </Tooltip>
+          {/* </Tooltip> */}
         </TitleContainer>
       </HeroContainer>
     )

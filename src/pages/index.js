@@ -9,10 +9,9 @@ import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
 import About from '../components/about'
-import Skills from '../components/skills'
+import SkillCategory from '../components/skill-category'
 import Timeline from '../components/timeline'
 import Repositories from '../components/repositories'
-import Tooltip from "react-simple-tooltip"
 import Subheader from '../components/subheader'
 
 const Separator = styled.hr`
@@ -66,24 +65,25 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Separator />
+            <br />
             <Row>              
-              <Subheader title={'Skills'} />
+              <Subheader title={'Technical Experience'} />
             </Row>
             <Row>
               <Col xs={4} sm={4}>
-                <Skills title='Web' skills={siteConfig.webSkills} />
+                <SkillCategory title='Web' skills={siteConfig.webSkills} />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title='Mobile' skills={siteConfig.mobileSkills} />
+                <SkillCategory title='Mobile' skills={siteConfig.mobileSkills} />
               </Col>
             </Row>
             <br />
             <Row>
               <Col xs={4} sm={4}>
-                <Skills title='Object-Oriented' skills={siteConfig.oopSkills} />
+                <SkillCategory title='Object-Oriented' skills={siteConfig.oopSkills} />
               </Col>
               <Col xs={4} sm={4}>
-                <Skills title='Other (SVN, DBMS, ...)' skills={siteConfig.otherSkills} />
+                <SkillCategory title='Other (SVN, DBMS, ...)' skills={siteConfig.otherSkills} />
               </Col>
             </Row>
           </Container>
@@ -91,7 +91,11 @@ class Home extends React.Component {
         <Wrapper>
           <Timeline />
         </Wrapper>
+
+        <Wrapper>
+        </Wrapper>
       </Layout>
+
     )
   }
 }
