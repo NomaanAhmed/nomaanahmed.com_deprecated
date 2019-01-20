@@ -1,4 +1,5 @@
 import React from 'react'
+import Tooltip from '../components/tooltip'
 
 class SkillBarSet extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class SkillBarSet extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ collapsed: false })
-    }, 3800);
+    }, 1000);
   }
 
   render() {
@@ -19,19 +20,25 @@ class SkillBarSet extends React.Component {
     return (      
       <div id="app" className={`container ${collapsed ? 'collapsed' : ''}`}>        
         <ul className="skills">
-          {skills.map((skill, index) => 
+          {skills.map((skill, index) =>
               <li key={skill.name} 
                   style={{ width: `${skill.level}%`, backgroundColor: `hsl(${hue}, ${saturation}%, ${100 / (index + 3.5) }%)` }}>
-                <p>                
-                  {skill.name}
-                  <span>
-                    {skill.level === 25 ? 'Decent' 
-                      : skill.level === 50 ? 'Good'
-                      : skill.level === 75 ? 'Great'
-                      : skill.level === 100 ? 'Awesome'
-                      : 'unspecified'}
-                  </span>
-                </p>
+                                  <Tooltip message={skill.details} position={'right'} styling={'Default'}>
+
+                  <p className='skillItem'>  
+                  <div>
+                    {skill.name}
+                    <span>
+                      {skill.level === 25 ? 'Decent' 
+                        : skill.level === 50 ? 'Good'
+                        : skill.level === 75 ? 'Great'
+                        : skill.level === 100 ? 'Awesome'
+                        : 'unspecified'}
+                    </span>
+                    </div>
+
+                  </p>
+                  </Tooltip>
               </li>
           )}
         </ul>

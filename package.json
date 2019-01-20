@@ -1,7 +1,7 @@
 {
-  "name": "Nomaan-Website",
+  "name": "NomaanWebsite",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Nomaan Ahmed's portfolio website.",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
@@ -25,9 +25,9 @@
     "styled-components": "^4.1.3"
   },
   "keywords": [
-    "gatsby"
+    "Nomaan Ahmed"
   ],
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

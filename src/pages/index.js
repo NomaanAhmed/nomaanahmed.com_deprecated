@@ -13,6 +13,7 @@ import SkillCategory from '../components/skill-category'
 import Timeline from '../components/timeline'
 import Repositories from '../components/repositories'
 import Subheader from '../components/subheader'
+import Tooltip from '../components/tooltip'
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -21,17 +22,17 @@ const Separator = styled.hr`
 
 class Home extends React.Component {
   render () {
-    const title = 'Hi. I\'m Nomaan.'
     return (
       <Layout location={this.props.location}>
         <SEO
-          title={title}
+          title={'Hi. I\'m Nomaan.'}
           keywords={['nomaan', 'ahmed', 'nomaanahmed', 'gatsby', 'gatsbyjs', 'react', 'curriculum']}
         />
 
         <Hero
           heroImg={siteConfig.siteCover}
-          title={title}
+          title={'Hi. I\'m'}
+          title2={'Nomaan.'}
         />
 
         <Wrapper className={this.props.className} >
@@ -71,7 +72,7 @@ class Home extends React.Component {
             </Row>
             <Row>
               <Col xs={4} sm={4}>
-                <SkillCategory title='Web' skills={siteConfig.webSkills} />
+                <SkillCategory title='Object-Oriented' skills={siteConfig.oopSkills} />
               </Col>
               <Col xs={4} sm={4}>
                 <SkillCategory title='Mobile' skills={siteConfig.mobileSkills} />
@@ -80,10 +81,10 @@ class Home extends React.Component {
             <br />
             <Row>
               <Col xs={4} sm={4}>
-                <SkillCategory title='Object-Oriented' skills={siteConfig.oopSkills} />
+                <SkillCategory title='Web' skills={siteConfig.webSkills} />
               </Col>
               <Col xs={4} sm={4}>
-                <SkillCategory title='Other (SVN, DBMS, ...)' skills={siteConfig.otherSkills} />
+                <SkillCategory title='Other (SVN, DBMS,  ...)' skills={siteConfig.otherSkills} />
               </Col>
             </Row>
           </Container>
@@ -93,6 +94,8 @@ class Home extends React.Component {
         </Wrapper>
 
         <Wrapper>
+        <Tooltip message={'Hello, I am a super cool tooltip'} position={'top'}>
+          {'tooltip'}</Tooltip>
         </Wrapper>
       </Layout>
 

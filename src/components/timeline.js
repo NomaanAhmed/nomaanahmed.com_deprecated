@@ -99,12 +99,13 @@ export default styled(Timeline)`
     transform: rotate(-45deg);
   }
   .timeline__item div.inner p {
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     font-size: 14px;
     background: #fff;
     color: #656565;
     border-radius: 0 0 6px 6px;
+    white-space: pre-wrap;
   }
   .timeline__item:nth-child(2n+2) div.inner {
     float: right;
@@ -116,7 +117,7 @@ export default styled(Timeline)`
     background: #25303B;
   }
   .timeline__title--small {
-    font-size: 10px;
+    font-size: 12px;
   }
   ${p => config().media['sm']`
   .timeline__item div.inner {

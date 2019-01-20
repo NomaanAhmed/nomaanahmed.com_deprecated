@@ -198,8 +198,7 @@ html {
 }
 body {
   color: #25303B;
-  font-family:  'Consolas', 'monaco', monospace;
-  /* 'Courier New', Courier, monospace; */
+  font-family: 'Courier New', Courier, monospace;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   text-decoration: none;
@@ -641,20 +640,21 @@ pre tt:after {
 .collapsed .skills li {
   width: 0 !important;
 }
-.skills li p {
+.skillItem {
   padding: 10px;
   margin: 0;
   font-weight: bold;
   width: 100%;
 }
-.skills li div {
+.skillItem div {
+  padding: 0px;
+  margin: 0;
+  font-weight: bold;
   width: 100%;
 }
-.skills li span {
-  position: absolute;
-  right: 15px;
-  bottom: 0px;
-  width: 20%;
+
+.skillItem span {
+  position: relative;
   text-align: right;
   font-weight: lighter;
   color: #fff;
@@ -664,9 +664,93 @@ pre tt:after {
 }
 
 small {
-  font-size: 11px;
-  color: #666;
+  font-size: 12px;
+  color: #fff;
 }
 small a {
   color: inherit;
 }
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+}
+
+.tooltip-trigger-wide {
+  display: inline-block;
+  width: 100%;
+}
+
+.tooltip-bubble {
+  min-width: 150px;
+  max-width: 210px;
+  position: absolute;
+  z-index: 10;
+}
+.tooltip-bubble::after {
+  content: "";
+  position: absolute;
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  padding-bottom: 9px;
+  transform: translateX(-50%);
+}
+.tooltip-top::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid rgba(37, 48, 60, 0.85);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  padding-top: 9px;
+  transform: translateX(-50%);
+}
+.tooltip-bottom::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid rgba(37, 48, 60, 0.85);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%;
+  padding-right: 9px;
+  transform: translateY(-50%);
+}
+.tooltip-left::after {
+  border-left: 9px solid rgba(37, 48, 60, 0.85);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.tooltip-right {
+  top: 10%;
+  left: 100%;
+  padding-left: 9px;
+  transform: translateY(-50%);
+}
+.tooltip-right::after {
+  border-right: 9px solid rgba(37, 48, 60, 0.85);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
