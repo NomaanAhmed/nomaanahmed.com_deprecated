@@ -37,11 +37,6 @@ module.exports = {
 //TODO RENAME AND REMOVE
     mobileSkills: [
       {
-        name: 'Java',
-        level: 75,
-        details: 'Android'
-      },
-      {
         name: 'Obj-C',
         level: 50,
         details: 'iOS'
@@ -52,6 +47,11 @@ module.exports = {
         details: 'iOS'
       },
       {
+        name: 'Java',
+        level: 75,
+        details: 'Android'
+      },
+      {
         name: 'C#',
         level: 75,
         details: 'Xamarin (Cross-Platform)'
@@ -59,14 +59,14 @@ module.exports = {
     ],
     oopSkills: [
       {
-        name: 'Python',
+        name: 'C#',
         level: 100,
-        details: 'Anaconda/Jupyter, R, TensorFlow, Pandas, Machine Learning, Big Data, Artificial Intelligence'
+        details: 'WPF, WinForms'
       },
       {
-        name: 'C++',
-        level: 50,
-        details: 'Video Games & Windows Application Development'
+        name: 'Python',
+        level: 100,
+        details: 'Anaconda, TensorFlow, Pandas, Machine Learning, Big Data, Artificial Intelligence (incl. R)'
       },
       {
         name: 'Java',
@@ -74,16 +74,16 @@ module.exports = {
         details: 'Raw'
       },
       {
-        name: 'C#',
-        level: 100,
-        details: 'WPF, WinForms'
+        name: 'C++',
+        level: 50,
+        details: 'Video Games & Windows Application Development'
       }
     ],
 
     otherSkills: [
       {
         name: 'Git',
-        level: 75,
+        level: 100,
         details: 'GitHub, GitLab, BitBucket'
       },
       {
@@ -100,6 +100,11 @@ module.exports = {
         name: 'MongoDB',
         level: 75,
         details: 'Raw'
+      },
+      {
+        name: 'Agile/Scrum',
+        level: 100,
+        details: 'Professional Experience'
       }
     ],
     jobs: [
@@ -111,10 +116,13 @@ module.exports = {
         },
         duration: '4 months',
         occupation: "Tools Programmer",
-        description: '- An extension of what was originally a 4-month internship as a result of performance;\
+        description: '- An extension of what was originally a 4-month internship as a result of performance\
         \n- Changed teams by request of new team lead and recommendation of prior team lead. \
-        \n- Required use of TypeScript, MongoDB, and implementation of internal APIs to track user interaction and assess proper use of features. Version control using Git. \
-        \n- Created/edited NPM & Bower packages to automatically generate documentation for our code in Markdown.'
+        \n- Development using TypeScript with a MongoDB backend. \
+        \n- Implementation of APIs to track user interaction and assess proper use of features. \
+        \n- Created a tool using NPM & Bower packages to automatically generate documentation for developers\' code in Markdown. \
+        \n- Version control using Git.\
+        \n- Heavy use of Scrum/Agile.'
       }, 
       {
         company: "Ubisoft Inc.",
@@ -124,13 +132,13 @@ module.exports = {
         },
         duration: '5 months',
         occupation: "Tools Programmer",
-        description: '- Maintained and optimized real-time, collaborative tools used in production of AAA titles pre-release and post-release. \
-        \n- Required high proficiency in C# and WPF while following a Model-View-ViewModel (MVVM) pattern. Version control using Perforce. \
-        \n- Gained experience working in a collaborative development environment and how to prevent and fix errors when programming in a team. Heavy use of Scrum/Agile. \
+        description: '- Development of a real-time, collaborative tools used in production of AAA titles pre-release and post-release. \
+        \n- C# (WPF) following a Model-View-ViewModel (MVVM) pattern with a MySQL backend. \
         \n- Worked with highly confidential information as titles were unannounced. \
-        \n- Required assessment of internal client needs and proper implementation procedure in terms of UX and best practices. \
-        \n- Valuable exposure to a team-based environment in which members depend on each other to meet deadlines. \
-        \n- Gained experience in managing workflows and ensuring proper timings to avoid bottlenecks and to meet deadlines.'
+        \n- Strict workflow inolving not only development but client request and UX adherence. \
+        \n- Gained experience in managing workflows and ensuring proper timings to avoid bottlenecks and to meet deadlines. \
+        \n- Version control using Perforce. \
+        \n- Heavy use of Scrum/Agile.'
       }, 
       {
         company: "Velan Inc.",
@@ -138,19 +146,19 @@ module.exports = {
           month: 'Jun',
           year: '2011'
         },
-        duration: '5 years,',
+        duration: '5 years',
         occupation: "Engineering Intern",
         description: '- Full-time summer job in a professional engineering environment (as well as continuous extensions of contract for part-time work during the school year). \
-        \n- Responsible for updating and maintaining a digital inventory and shipment management system using a centralized server requiring annual overhaul. \
+        \n- Responsible for updating and maintaining an inventory and shipment management database requiring annual overhaul. \
         \n- Automated many daily tasks using basic scripts to optimize efficiency. \
         \n- Analysis and reporting of chemical engineering processes within an industrial setting. \
         \n- Assisted in review and drafting of technical drawings and submission requirements for manufacturing. \
-        \n- Involved in teamwork and assisted in training of others to use these systems in group and individual settings.'
+        \n- Involved teamwork and assisting in training of others in group and individual settings.'
       },
       /* ... */
     ],
     social: {
-      twitter: "https://twitter.com/nomaanahmed",
+      twitter: "https://twitter.com",
       linkedin: "https://www.linkedin.com/in/nomaanahmed",
       github: "https://github.com/nomaanahmed",
       email: "nomaan.ahmed.8@gmail.com"
@@ -165,7 +173,7 @@ module.exports = {
     icon: 'static/images/favicon.png',
     headerLinks: [
       {
-        label: 'Nomaan Ahmed',
+        label: 'Home',
         url: '/',
       }
     ]

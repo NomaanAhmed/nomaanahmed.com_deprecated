@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { FaFileAlt } from "react-icons/fa"
+import { FiDownload } from "react-icons/fi";
 import siteConfig from '../../data/siteConfig'
 
 const HeaderWrapper = styled.header`
@@ -43,15 +43,17 @@ const HeaderLink = styled(Link)`
   border: 0;
   margin: 0;
   margin-right: 0.5rem;
+  margin-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
   min-width: 42px;
   z-index: 10;
 `
 const ResumeLink = styled(({ className }) => (
-  <a className={className} href='/documents/resume.pdf' target='_blank' 
+  <a style={{textDecoration: 'none', marginTop: '10px'}} className={className} href='/documents/resume.pdf' target='_blank' 
     rel="noopener noreferrer">
-    <FaFileAlt size={32} />
+        <span style={{marginRight: '5px'}}>{'Download Resume'}</span>
+    <FiDownload size={32} style={{position: 'relative', bottom: '8px'}} />
   </a>
 ))`
   position: relative;

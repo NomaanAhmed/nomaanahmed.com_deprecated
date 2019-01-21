@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaAlignRight } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
-import About from '../components/about'
+import Section from '../components/section'
 import SkillCategory from '../components/skill-category'
 import Timeline from '../components/timeline'
 import Repositories from '../components/repositories'
 import Subheader from '../components/subheader'
-import Tooltip from '../components/tooltip'
+import Education from '../components/education'
+import subheader from '../components/subheader';
 
 const Separator = styled.hr`
   margin-top: 24px;
@@ -62,11 +63,10 @@ class Home extends React.Component {
             </Row>
             <Row>
               <Col xs={4} sm={8}>
-                <About title='About' text={siteConfig.authorDescription}/>
+                <Section title='About' text={siteConfig.authorDescription}/>
               </Col>
             </Row>
             <Separator />
-            <br />
             <Row>              
               <Subheader title={'Technical Experience'} />
             </Row>
@@ -78,7 +78,6 @@ class Home extends React.Component {
                 <SkillCategory title='Mobile' skills={siteConfig.mobileSkills} />
               </Col>
             </Row>
-            <br />
             <Row>
               <Col xs={4} sm={4}>
                 <SkillCategory title='Web' skills={siteConfig.webSkills} />
@@ -90,12 +89,16 @@ class Home extends React.Component {
           </Container>
         </Wrapper>
         <Wrapper>
+          <Education />
+        </Wrapper>
+        <Wrapper>
           <Timeline />
         </Wrapper>
-
         <Wrapper>
-        <Tooltip message={'Hello, I am a super cool tooltip'} position={'top'}>
-          {'tooltip'}</Tooltip>
+          <Section title={'Projects'} />
+          <h3>Currently working on: <a href='https://github.com/signalapp/Signal-Android'>Signal Messenger for Android</a></h3>
+          <Separator />
+          <Repositories />
         </Wrapper>
       </Layout>
 

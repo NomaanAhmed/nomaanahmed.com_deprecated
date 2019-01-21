@@ -101,7 +101,7 @@ export default styled(Timeline)`
   .timeline__item div.inner p {
     padding: 10px;
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
     background: #fff;
     color: #656565;
     border-radius: 0 0 6px 6px;
