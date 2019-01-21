@@ -1,7 +1,11 @@
 import React, { Fragment } from 'react'
+import styled from 'styled-components'
 import { Row, Col } from 'react-awesome-styled-grid'
 import Section from '../components/section'
 
+const Separator = styled.hr`
+  margin-bottom: 16px;
+`
 export default ({ title = 'Education', text = '' }) => {
   return (
     <Fragment>
@@ -26,9 +30,10 @@ export default ({ title = 'Education', text = '' }) => {
         </Col>
       </Row>
       <Row>
-        <p className='heading4'>Currently enrolled at the Gina Cody School of
-          Engineering & Computer Science at Concordia University in Montreal, Quebec.</p>
+        <p className='heading4' style={{marginLeft: '12%'}}>Currently enrolled at the Gina Cody School of
+          Engineering & Computer Science at Concordia University.</p>
       </Row>
+      <Separator />
       <Row>
           <ul style={{marginLeft: '15%', marginRight: '5%'}}>
             <li>Big Data Analytics</li>
@@ -40,7 +45,7 @@ export default ({ title = 'Education', text = '' }) => {
           </ul>
           <ul>
             <li>Principles of Programming Languages</li>
-            <li >Formal Methods for Software Engineering</li>
+            <li>Software Architecture I & II</li>
             <li>Software Process</li>
             <li>Control Systems Engineering</li>
             <li>Discrete Math for Computer Science</li>

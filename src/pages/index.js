@@ -59,6 +59,7 @@ class Home extends React.Component {
                     <FaEnvelope className="social-icon" size="32" />
                   </a>}
                 </div>
+                <span className='heading4'>Currently in: Toronto, ON</span>
               </Col>
             </Row>
             <Row>

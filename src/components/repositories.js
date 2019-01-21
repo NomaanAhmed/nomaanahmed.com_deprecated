@@ -6,7 +6,7 @@ import siteConfig from '../../data/siteConfig'
 import Loader from './loader'
 
 const endpoint =
-  `https://api.github.com/users/${siteConfig.githubUsername}/repos`
+  `https://api.github.com/users/${siteConfig.githubUsername}/repos?direction=desc`
 
 
 class Repositories extends React.Component {

@@ -5,8 +5,9 @@ module.exports = {
     twitterUsername: 'nomaanahmed',
     githubUsername: 'nomaanahmed',
     authorAvatar: '/images/avatar.png',
-    authorDescription: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Donec ut elit eget purus auctor euismod non a dolor. Integer non tincidunt nulla. Nulla ac purus mattis, dapibus quam at, pharetra mi. Vivamus quis diam congue, eleifend purus id, viverra sem. Duis quis dui sed mauris malesuada accumsan. Aliquam erat neque, pretium sit amet viverra eu, imperdiet vel turpis.`,
+    authorDescription: `A developer with proven experience looking to gain the experience and technical skills that\
+    a competitive work environment has to offer. Fluent in English, French, Urdu, Hindi. \
+    Always open to new and exciting opportunities - Have an idea? Let's make it happen.`,
     webSkills: [
       {
         name: 'TypeScript',
@@ -66,7 +67,7 @@ module.exports = {
       {
         name: 'Python',
         level: 100,
-        details: 'Anaconda, TensorFlow, Pandas, Machine Learning, Big Data, Artificial Intelligence (incl. R)'
+        details: 'Anaconda, TensorFlow, Pandas, Machine Learning, Big Data (incl. R), Artificial Intelligence'
       },
       {
         name: 'Java',
@@ -114,10 +115,9 @@ module.exports = {
           month: 'May',
           year: '2016'
         },
-        duration: '4 months',
+        duration: '5 months',
         occupation: "Tools Programmer",
-        description: '- An extension of what was originally a 4-month internship as a result of performance\
-        \n- Changed teams by request of new team lead and recommendation of prior team lead. \
+        description: '- End of previous contract resulting in switching to a new team by request of new team lead and recommendation of previous team lead due to performance. \
         \n- Development using TypeScript with a MongoDB backend. \
         \n- Implementation of APIs to track user interaction and assess proper use of features. \
         \n- Created a tool using NPM & Bower packages to automatically generate documentation for developers\' code in Markdown. \
@@ -135,7 +135,7 @@ module.exports = {
         description: '- Development of a real-time, collaborative tools used in production of AAA titles pre-release and post-release. \
         \n- C# (WPF) following a Model-View-ViewModel (MVVM) pattern with a MySQL backend. \
         \n- Worked with highly confidential information as titles were unannounced. \
-        \n- Strict workflow inolving not only development but client request and UX adherence. \
+        \n- Strict workflow involving not only development but client request and UX adherence. \
         \n- Gained experience in managing workflows and ensuring proper timings to avoid bottlenecks and to meet deadlines. \
         \n- Version control using Perforce. \
         \n- Heavy use of Scrum/Agile.'
@@ -146,7 +146,7 @@ module.exports = {
           month: 'Jun',
           year: '2011'
         },
-        duration: '5 years',
+        duration: '~5 years',
         occupation: "Engineering Intern",
         description: '- Full-time summer job in a professional engineering environment (as well as continuous extensions of contract for part-time work during the school year). \
         \n- Responsible for updating and maintaining an inventory and shipment management database requiring annual overhaul. \
