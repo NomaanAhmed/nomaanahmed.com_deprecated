@@ -50,7 +50,7 @@ const HeaderLink = styled(Link)`
   z-index: 10;
 `
 const ResumeLink = styled(({ className }) => (
-  <a style={{textDecoration: 'none', marginTop: '10px'}} className={className} href='/documents/resume.pdf' target='_blank' 
+  <a style={{textDecoration: 'none', marginTop: '10px'}} className={className} href='/documents/NomaanAhmed_Resume.pdf' target='_blank' 
     rel="noopener noreferrer">
         <span style={{marginRight: '5px'}}>{'Download Resume'}</span>
     <FiDownload size={32} style={{position: 'relative', bottom: '8px'}} />
