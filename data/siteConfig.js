@@ -1,7 +1,7 @@
 module.exports = {
     siteTitle: 'Nomaan Ahmed',
-    siteDescription: `Create your online curriculum in just a few minutes with this starter`,
-    authorName: 'Nomaan Ahmed',
+    siteDescription: ``,
+    authorName: '',
     twitterUsername: 'nomaanahmed',
     githubUsername: 'nomaanahmed',
     authorAvatar: '/images/avatar.png',
@@ -35,7 +35,6 @@ module.exports = {
         details: 'Raw, ReactJS, Node.JS/npm, GatsbyJS'
       }
     ],
-//TODO RENAME AND REMOVE
     mobileSkills: [
       {
         name: 'Obj-C',
