@@ -1,5 +1,5 @@
 module.exports = {
-    siteTitle: 'Nomaan Ahmed',
+    siteTitle: '',
     siteDescription: ``,
     authorName: '',
     twitterUsername: 'nomaanahmed',
