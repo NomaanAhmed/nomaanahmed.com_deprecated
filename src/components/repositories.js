@@ -43,8 +43,8 @@ class Repositories extends React.Component {
                       {/* <div className="repositories__repo-date">
                         Updated: {new Date(repo.updated_at).toUTCString()}
                       </div> */}
-                      <div className="repositories__repo-star">
-                        ★ {repo.stargazers_count}
+                      <div className="repositories__repo-lang">
+                         {'<'}{repo.language}{'>'}
                       </div>
                     </div>
                     <hr />
@@ -74,7 +74,7 @@ export default styled(Repositories)`
     color: #bbb;
     font-size: 10px;
   }
-  .repositories__repo-star {
+  .repositories__repo-lang {
     position: absolute;
     top: 0;
     right: 0;
