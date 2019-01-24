@@ -18,7 +18,7 @@ export default ({ title = 'Education', text = '' }) => {
                 src='/../images/concordia.png'
                 alt='Concordia Logo'
               />
-              <span className='heading2'>Concordia University</span>
+              <span className='heading2'>Concordia University</span> 
               <span className='heading3'>Bachelor's of Engineering</span>
               <span className='heading4'>Major Software Engineering</span>
             </div>
@@ -35,15 +35,16 @@ export default ({ title = 'Education', text = '' }) => {
       </Row>
       <Separator />
       <Row>
-          <ul style={{marginLeft: '15%', marginRight: '5%'}}>
-            <li>Big Data Analytics</li>
+        <div style={{marginLeft: '10%'}}>
+          <ul style={{display: 'inline-block', verticalAlign: 'middle'}}>
+            <li>Big Data Analytics & Machine Learning</li>
             <li>Artificial Intelligence</li>
             <li>Computer Graphics</li>
             <li>Web Applications</li>
             <li>System Hardware</li>
             <li>Operating Systems</li>
           </ul>
-          <ul>
+          <ul style={{display: 'inline-block', verticalAlign: 'middle'}}>
             <li>Principles of Programming Languages</li>
             <li>Software Architecture I & II</li>
             <li>Software Process</li>
@@ -51,6 +52,7 @@ export default ({ title = 'Education', text = '' }) => {
             <li>Discrete Math for Computer Science</li>
             <li>Data Structures & Algorithms</li>
           </ul>
+          </div>
       </Row>
   </Fragment>
   )
