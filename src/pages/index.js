@@ -17,8 +17,7 @@ import Education from '../components/education'
 import subheader from '../components/subheader';
 
 const Separator = styled.hr`
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 `
 
 class Home extends React.Component {
@@ -68,7 +67,7 @@ class Home extends React.Component {
               </Col>
             </Row>
             <Separator />
-            <Row>              
+            <Row>     
               <Subheader title={'Technical Experience'} />
             </Row>
             <Row>
@@ -110,7 +109,6 @@ class Home extends React.Component {
 export default styled(Home)`
   .page-content {
     max-width: 100%;
-    margin-bottom: 40px;
   }
   .avatar {
     align-items: center;

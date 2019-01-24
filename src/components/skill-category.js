@@ -7,7 +7,6 @@ export default ({ title = 'Skills', skills = [] }) => {
       <h2>{title}</h2>
         <SkillBarSet hue="210" saturation="40" skills={skills} />
         <br />
-
     </Fragment>
   )
 }

@@ -2,12 +2,14 @@ import React from "react";
 import jsonFetch from "simple-json-fetch";
 import styled from 'styled-components'
 import siteConfig from '../../data/siteConfig'
-
 import Loader from './loader'
 
 const endpoint =
   `https://api.github.com/users/${siteConfig.githubUsername}/repos?direction=desc`
 
+  const Separator = styled.hr`
+  margin-bottom: 16px;
+`
 
 class Repositories extends React.Component {
   constructor(props) {
@@ -35,19 +37,19 @@ class Repositories extends React.Component {
               <div className="repositories__content">
                 {this.state.repos.map(repo => (
                   <React.Fragment key={repo.name}>
+                  <div>
                     <div className="repositories__repo">
-                      <a className='repositories__repo-link' href={repo.html_url}>
+                      <a className='repositories__repo-link' href={repo.html_url}> 
+                      <span className="repositories__repo-lang hideIfMobile">{'<'}{repo.language}{'>'}</span>
                         <strong>{repo.name}</strong>
                       </a>
                       <div>{repo.description}</div>
                       {/* <div className="repositories__repo-date">
                         Updated: {new Date(repo.updated_at).toUTCString()}
                       </div> */}
-                      <div className="repositories__repo-lang">
-                         {'<'}{repo.language}{'>'}
-                      </div>
                     </div>
-                    <hr />
+                  </div>
+                    <Separator />
                   </React.Fragment>
                 ))}
               </div>
@@ -59,7 +61,7 @@ class Repositories extends React.Component {
 }
 
 export default styled(Repositories)`
-  position: relative;
+
   .repositories__content {
     margin-bottom: 40px;
   }
@@ -75,10 +77,9 @@ export default styled(Repositories)`
     font-size: 10px;
   }
   .repositories__repo-lang {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
   }
+
   .repositories__loader {
     display: flex;
   }

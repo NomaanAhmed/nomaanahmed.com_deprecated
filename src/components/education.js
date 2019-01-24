@@ -5,6 +5,7 @@ import Section from '../components/section'
 
 const Separator = styled.hr`
   margin-bottom: 16px;
+  margin-left: 8%;
 `
 export default ({ title = 'Education', text = '' }) => {
   return (
@@ -20,7 +21,8 @@ export default ({ title = 'Education', text = '' }) => {
               />
               <span className='heading2'>Concordia University</span> 
               <span className='heading3'>Bachelor's of Engineering</span>
-              <span className='heading4'>Major Software Engineering</span>
+              <span className='heading4 hideIfMobile'>Major Software Engineering</span>
+              <span className='heading4 hideIfNonMobile'>Major Software Eng.</span>
             </div>
         </Col>
         <Col xs={4} sm={4}>

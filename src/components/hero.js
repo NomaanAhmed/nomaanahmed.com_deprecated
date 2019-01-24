@@ -38,7 +38,7 @@ class Hero extends React.Component {
       <HeroContainer className={className}>
         <TitleContainer>
             <HeroTitle>{title}</HeroTitle>
-            <Tooltip message={'(n\u014dm\u2212\u00E4\u00E4n)'} position={'right'} styling={'Hero'}>
+            <Tooltip message={'(n\u014dm\u2212\u00E4\u00E4n)'} position={'bottom'} styling={'Hero'}>
               <HeroTitle>{title2}</HeroTitle>
             </Tooltip>
         </TitleContainer>

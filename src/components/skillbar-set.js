@@ -36,7 +36,6 @@ class SkillBarSet extends React.Component {
                         : 'unspecified'}
                     </span>
                     </div>
-
                   </p>
                   </Tooltip>
               </li>

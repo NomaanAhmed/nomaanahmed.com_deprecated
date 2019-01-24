@@ -5,7 +5,7 @@ module.exports = {
     twitterUsername: 'nomaanahmed',
     githubUsername: 'nomaanahmed',
     authorAvatar: '/images/avatar.png',
-    authorDescription: `A developer with proven experience looking to gain the experience and technical skills that\
+    authorDescription: `An upcoming Software Engineer with proven experience looking to gain the experience and technical skills that\
     a competitive work environment has to offer. Fluent in English, French, Urdu, Hindi. \
     Always open to new and exciting opportunities - Have an idea? Let's make it happen.`,
     webSkills: [
@@ -109,12 +109,11 @@ module.exports = {
     ],
     jobs: [
       {
-        company: "Ubisoft Inc.",
+        company: "Ubisoft Montreal",
         begin: {
           month: 'May',
           year: '2016'
         },
-        duration: '5 months',
         occupation: "Tools Programmer",
         description: '- End of previous contract resulting in switching to a new team by request of new team lead and recommendation of previous team lead due to performance. \
         \n- Development using TypeScript with a MongoDB backend. \
@@ -124,12 +123,11 @@ module.exports = {
         \n- Heavy use of Scrum/Agile.'
       }, 
       {
-        company: "Ubisoft Inc.",
+        company: "Ubisoft Montreal",
         begin: {
           month: 'Jan',
           year: '2016'
         },
-        duration: '5 months',
         occupation: "Tools Programmer",
         description: '- Development of a real-time, collaborative tools used in production of AAA titles pre-release and post-release. \
         \n- C# (WPF) following a Model-View-ViewModel (MVVM) pattern with a MySQL backend. \
@@ -145,7 +143,6 @@ module.exports = {
           month: 'Jun',
           year: '2011'
         },
-        duration: '~5 years',
         occupation: "Engineering Intern",
         description: '- Full-time summer job in a professional engineering environment (as well as continuous extensions of contract for part-time work during the school year). \
         \n- Responsible for updating and maintaining an inventory and shipment management database requiring annual overhaul. \
@@ -172,7 +169,7 @@ module.exports = {
     icon: 'static/images/favicon.png',
     headerLinks: [
       {
-        label: 'Home',
+        label: 'Nomaan Ahmed',
         url: '/',
       }
     ]
