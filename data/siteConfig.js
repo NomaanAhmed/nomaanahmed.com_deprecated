@@ -87,9 +87,9 @@ module.exports = {
         details: 'GitHub, GitLab, BitBucket'
       },
       {
-        name: 'Perforce',
+        name: 'Perforce/Helix',
         level: 75,
-        details: 'P4V'
+        details: 'P4V/Helix Client'
       },
       {
         name: 'MySQL',

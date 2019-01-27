@@ -83,7 +83,7 @@ class Home extends React.Component {
                 <SkillCategory title='Web' skills={siteConfig.webSkills} />
               </Col>
               <Col xs={4} sm={4}>
-                <SkillCategory title='Other (SVN, DBMS,  ...)' skills={siteConfig.otherSkills} />
+                <SkillCategory title='Other (SCM, DBMS,  ...)' skills={siteConfig.otherSkills} />
               </Col>
             </Row>
           </Container>
