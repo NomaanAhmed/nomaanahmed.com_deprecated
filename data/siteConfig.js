@@ -1,6 +1,6 @@
 module.exports = {
     siteTitle: '',
-    siteDescription: ``,
+    siteDescription: `Personal portfolio website for Nomaan Ahmed.`,
     authorName: '',
     twitterUsername: 'nomaanahmed',
     githubUsername: 'nomaanahmed',
